@@ -6,7 +6,7 @@ build: Dockerfile
 	docker build -t $(IMAGE) .
 
 run: clean-containers build
-	docker run --rm $(IMAGE) bash -i -c 'nvm --version' 2>/dev/null
+	docker run --rm $(IMAGE) bash -lic 'nvm --version' 2>/dev/null
 
 clean-containers:
 	-docker ps -a | grep -v IMAGE | awk '{ print $$1 }' | xargs docker rm -f
