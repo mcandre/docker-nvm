@@ -8,7 +8,7 @@ https://registry.hub.docker.com/u/mcandre/docker-nvm/
 
 ```
 $ make
-docker run --rm mcandre/docker-nvm:latest 'nvm --version'
+docker run --rm mcandre/docker-nvm bash -i -c 'nvm --version' 2>/dev/null
 0.25.3
 ```
 
