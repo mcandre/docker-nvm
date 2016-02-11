@@ -19,6 +19,7 @@ docker run --rm mcandre/docker-nvm bash -lic 'nvm --version' 2>/dev/null
 ## Optional
 
 * [make](http://www.gnu.org/software/make/)
+* [Node.js](https://nodejs.org/en/) (for dockerlint)
 
 ## Debian/Ubuntu
 
